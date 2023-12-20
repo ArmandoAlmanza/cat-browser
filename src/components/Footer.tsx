@@ -11,13 +11,13 @@ const Footer = () => {
                     </span>
                 </h2>
                 <nav className="flex flex-row justify-between gap-3">
-                    <a href="https://github.com/ArmandoAlmanza">
+                    <a href="https://github.com/ArmandoAlmanza" target="_blank">
                         <FaGithub />
                     </a>
-                    <a href="https://github.com/ArmandoAlmanza">
+                    <a href="https://github.com/ArmandoAlmanza" target="_blank">
                         <FaInstagram />
                     </a>
-                    <a href="https://github.com/ArmandoAlmanza">
+                    <a href="https://github.com/ArmandoAlmanza" target="_blank">
                         <FaX />
                     </a>
                 </nav>
