@@ -1,15 +1,17 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import CatlistGrid from "../components/CatlistGrid";
 import App from "../App";
+import LandingPage from "../pages/LandingPage";
+import ErrorPage from "../pages/ErrorPage";
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <App />,
+        errorElement: <ErrorPage />,
         children: [
             {
-                path: "/cat-list",
-                element: <CatlistGrid />,
+                path: "/",
+                element: <LandingPage />,
             },
         ],
     },
