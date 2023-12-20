@@ -7,9 +7,10 @@ export const getCatsImagesByBreed = async (
     const res = await axios(
         "/images/search?breed_ids=" + breed_id + "&limit=" + amount
     );
-
-    console.table(res.data);
     return res.data;
 };
 
 export const getCatsGrid = async () => axios.get("/images/search?limit=12");
+
+export const getRandomCat = async () =>
+    axios.get("https://api.thecatapi.com/v1/images/search");
