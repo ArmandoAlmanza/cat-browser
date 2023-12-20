@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
-        <nav className="hidden md:flex md:flex-col md:gap-5 md:justify-between">
+        <nav className="hidden md:flex md:flex-col md:gap-5 md:justify-between font-second">
             <Link
-                className="text-2xl hover:text-purple-300 transition-colors duration-300"
+                className="text-2xl hover:text-purple-300 transition-colors duration-300 font-se"
                 to="/"
             >
                 Home
