@@ -1,5 +1,6 @@
 import { FaBarsStaggered } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import Navbar from "./Navbar";
 
 const Header = () => {
     return (
@@ -7,9 +8,10 @@ const Header = () => {
             <h1 className="text-3xl font-semibold">
                 Cat <span className="text-stone-300">Browser</span>
             </h1>
-            <Link className="outline-none px-3 text-2xl" to={"/cat-list"}>
+            <Link className="outline-none px-3 text-2xl block md:hidden" to={"/cat-list"}>
                 <FaBarsStaggered />
             </Link>
+			<Navbar />
         </header>
     );
 };
