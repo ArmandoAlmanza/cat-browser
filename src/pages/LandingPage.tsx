@@ -1,10 +1,9 @@
 import { useState } from "react";
-import { CatImageType, mockCatImage } from "../interfaces/CatInterface";
+import { CatImageType } from "../interfaces/CatInterface";
 import { getRandomCat } from "../api/axiosResponse";
 
 const LandingPage = () => {
-    const [randomCatImage, setRandomCatImage] =
-        useState<CatImageType>(mockCatImage);
+    const [randomCatImage, setRandomCatImage] = useState<CatImageType>();
 
     const randomCat = async () => {
         getRandomCat().then((data) => {
@@ -23,7 +22,7 @@ const LandingPage = () => {
             >
                 Get Random Cat!!
             </button>
-            {randomCatImage !== mockCatImage ? (
+            {randomCatImage ? (
                 <img src={randomCatImage.url} alt="random cat image" />
             ) : (
                 ""
