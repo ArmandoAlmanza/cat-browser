@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { getBreeds } from "../api/axiosResponse";
 import { CatBreed } from "../interfaces/CatInterface";
+import CatCard from "../components/CatCard";
 
 const BreedsShowcase = () => {
     const [selectedBreed, setSelectedBreed] = useState("");
@@ -34,11 +35,7 @@ const BreedsShowcase = () => {
                         ))}
                     </select>
                 </div>
-                {selectedBreed != "" ? (
-                    <p>Your favorite fruit: {selectedBreed}</p>
-                ) : (
-                    ""
-                )}
+                {selectedBreed != "" ? <CatCard catId={selectedBreed} /> : ""}
             </div>
         </div>
     );

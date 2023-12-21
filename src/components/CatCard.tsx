@@ -1,10 +1,13 @@
-
-const CatCard = () => {
-  return (
-	<article className='flex flex-col justify-center'>
-		<h1>hello world</h1>
-	</article>
-  )
+interface CatProps {
+    catId: string;
 }
 
-export default CatCard
+const CatCard = ({ catId }: CatProps) => {
+    return (
+        <article className="flex flex-col justify-center">
+            <h1>{catId}</h1>
+        </article>
+    );
+};
+
+export default CatCard;
