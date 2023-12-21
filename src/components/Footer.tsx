@@ -6,8 +6,8 @@ const Footer = () => {
             <div className="flex flex-col content-center items-center gap-3">
                 <h2 className="text-xl">
                     Made by{" "}
-                    <span className="text-2xl font-semibold text-purple-300">
-                        Armando Almanza
+                    <span className="text-xl font-semibold">
+                        Armando<span className="text-purple-300">Almanza</span>
                     </span>
                 </h2>
                 <nav className="flex flex-row justify-between gap-3">
