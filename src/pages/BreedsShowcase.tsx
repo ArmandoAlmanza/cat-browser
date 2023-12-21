@@ -13,11 +13,11 @@ const BreedsShowcase = () => {
     }, []);
 
     return (
-        <div className="flex flex-col p-4 content-center items-center w-full gap-6">
+        <div className="flex flex-col p-4 content-center items-center w-full gap-6 max-w-4xl mx-auto">
             <h2 className="text-3xl font-semibold font-second">
                 Know more about our fluffy friends!
             </h2>
-            <div className="border border-gray-200 w-full rounded-2xl flex flex-col items-center content-center gap-5 p-5">
+            <div className="border border-gray-400 w-full rounded-2xl flex flex-col items-center content-center gap-5 p-5">
                 <h3>Select a Cat Breed</h3>
                 <div className="relative h-10 w-72 min-w-[200px]">
                     <select
