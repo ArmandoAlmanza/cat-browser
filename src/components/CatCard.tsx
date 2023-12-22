@@ -4,7 +4,6 @@ import { CatBreed } from "../interfaces/CatInterface";
 import Rating from "./Rating";
 
 const CatCard = ({
-    id,
     name,
     temperament,
     origin,

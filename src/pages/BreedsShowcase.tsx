@@ -25,7 +25,9 @@ const BreedsShowcase = () => {
                     <select
                         className="peer h-full w-full rounded-[7px] border border-purple-400 bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-purple-400 placeholder-shown:border-t-purple-200 empty:!bg-purple-900 focus:border-2 focus:border-purple-900focus:outline-0 disabled:border-0 disabled:bg-purple-50"
                         onChange={(e) =>
-                            setSelectedBreed(catBreeds[e.target.value])
+                            setSelectedBreed(
+                                catBreeds[parseInt(e.target.value)]
+                            )
                         }
                         defaultValue={0}
                         disabled={catBreeds.length === 0}
