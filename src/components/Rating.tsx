@@ -16,11 +16,11 @@ const Rating = ({ title, stars, short }: RatingProps) => {
             <div className="group">
                 <FaInfo className="absolute top-0 left-36 text-black bg-blue-300 rounded-full text-lg px-1 py-1 cursor-pointer z-10" />
                 <p
-                    className={`hidden group-hover:block group-hover:z-10 text-center bg-nav_bg text-white py-1 px-1 w-fit rounded-xl text-md absolute z-0 -top-10 transform cursor-pointer transition-opacity duration-300`}
+                    className={`hidden group-hover:block group-hover:z-10 text-center bg-nav_bg text-white py-1 px-4 w-fit rounded-xl text-md absolute z-0 -top-10 transform cursor-pointer transition-opacity duration-300`}
                 >
                     {stars < 3
                         ? "The cat is not to " + short
-                        : "The cat is vey " + short}
+                        : "The cat is very " + short}
                 </p>
             </div>
         </div>
