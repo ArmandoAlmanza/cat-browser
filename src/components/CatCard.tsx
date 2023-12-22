@@ -1,24 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { CatBreed } from "../interfaces/CatInterface";
-import { getBreedData } from "../api/axiosResponse";
-import Stars from "./Stars";
+
 import Rating from "./Rating";
 
 const CatCard = ({
-    weight,
     id,
     name,
-    cfa_url,
-    vetstreet_url,
-    vcahospitals_url,
     temperament,
     origin,
-    country_codes,
-    country_code,
     description,
-    life_span,
-    indoor,
-    lap,
     alt_names,
     adaptability,
     affection_level,
@@ -26,32 +16,10 @@ const CatCard = ({
     dog_friendly,
     energy_level,
     grooming,
-    health_issues,
-    intelligence,
-    shedding_level,
     social_needs,
-    stranger_friendly,
-    vocalisation,
-    experimental,
-    hairless,
-    natural,
-    rare,
-    rex,
-    suppressed_tail,
-    short_legs,
     wikipedia_url,
-    hypoallergenic,
-    reference_image_id,
     image,
 }: CatBreed) => {
-    // const [catBreed, setCatBreed] = useState<CatBreed>();
-
-    // useEffect(() => {
-    //     getBreedData(catId).then((data) => {
-    //         setCatBreed(data.data);
-    //         console.log(data.data);
-    //     });
-    // }, [catId]);
     return (
         <article className="flex flex-col gap-3 justify-center bg-white w-full p-5 rounded-2xl">
             <img

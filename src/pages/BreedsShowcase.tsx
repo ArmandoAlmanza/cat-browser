@@ -3,10 +3,8 @@ import { getBreeds } from "../api/axiosResponse";
 import { CatBreed } from "../interfaces/CatInterface";
 import CatCard from "../components/CatCard";
 
-import { DEFAULT_CAT_BREED } from "../interfaces/mockData";
-
 const BreedsShowcase = () => {
-    const [selectedBreed, setSelectedBreed] = useState("");
+    const [selectedBreed, setSelectedBreed] = useState("belg");
     const [catBreeds, setCatBreeds] = useState<CatBreed[]>([]);
 
     useEffect(() => {
@@ -37,7 +35,7 @@ const BreedsShowcase = () => {
                         ))}
                     </select>
                 </div>
-                {selectedBreed != "" ? <CatCard {...DEFAULT_CAT_BREED} /> : ""}
+                {selectedBreed != "" ? <CatCard {...selectedBreed} /> : ""}
             </div>
         </div>
     );
