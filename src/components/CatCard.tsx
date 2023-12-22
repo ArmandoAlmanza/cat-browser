@@ -30,9 +30,6 @@ const CatCard = ({
             <h1 className="relative text-xl">
                 {name}{" "}
                 <span className="font-second text-gray-400">({origin})</span>
-                <small className="text-sm italic absolute top-0 left-44">
-                    {id}
-                </small>
                 <p className="text-sm italic">{alt_names} </p>
             </h1>
 
