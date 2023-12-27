@@ -25,7 +25,7 @@ const LandingPage = () => {
             {randomCatImage ? (
                 <img src={randomCatImage.url} alt="random cat image" />
             ) : (
-                ""
+                <img className="h-64" src="/feli.jpg" alt="Feli" />
             )}
         </div>
     );

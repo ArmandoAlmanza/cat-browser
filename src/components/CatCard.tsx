@@ -22,7 +22,7 @@ const CatCard = ({
     return (
         <article className="flex flex-col gap-3 justify-center bg-white w-full p-5 rounded-2xl">
             <img
-                className="min-h-48 max-h-48 w-11/12 max-w-fit md:min-w-48 mx-auto"
+                className="min-h-48 max-h-48 w-11/12 max-w-fit md:min-w-48 md:max-w-48 mx-auto"
                 src={image.url}
                 alt="image cat"
             />

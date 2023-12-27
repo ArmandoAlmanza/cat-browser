@@ -38,6 +38,13 @@ const Navbar = ({ navOpened, setNavOpened }: NavProps) => {
             >
                 Breed List
             </Link>
+            <Link
+                className="relative mx-auto text-gray-200 font-semibold text-xl transition-colors duration-300 after:content-[''] after:w-0 after:h-[2px] after:bg-white after:absolute after:left-0 after:-bottom-2 after:transition-[width] after:duration-300 hover:text-white hover:after:w-5 md:after:bg-black  md:text-black md:hover:text-purple-500"
+                to="/feli"
+                onClick={() => setNavOpened(false)}
+            >
+                Feli
+            </Link>
         </nav>
     );
 };

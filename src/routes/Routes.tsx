@@ -3,6 +3,7 @@ import App from "../App";
 import LandingPage from "../pages/LandingPage";
 import ErrorPage from "../pages/ErrorPage";
 import BreedsShowcase from "../pages/BreedsShowcase";
+import Feli from "../pages/Feli";
 
 const router = createBrowserRouter([
     {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
             {
                 path: "/breeds",
                 element: <BreedsShowcase />,
+            },
+            {
+                path: "/feli",
+                element: <Feli />,
             },
         ],
     },
